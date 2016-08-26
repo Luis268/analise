@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iColabora</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/mysql_lib.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+</head>
+<body>
+	<section>
+		<header>
+			<nav class="navbar navbar-default setting">
+			  <div class="container-fluid" id="container-color-top">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a href="#"><img id="container-logo" src="img/logo.png" /></a>
+			    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a id="setting-color-link" href="#">DASHBOARDS</a></li>
+			        <li><a id="setting-color-link" href="#">SOLUÇÕES</a></li>
+			        <li><a id="setting-color-link" href="#">ADMINISTRAÇÃO</a></li>			        
+			      </ul>			      
+			      
+			      <ul class="nav navbar-nav setting-background">
+			      	<li><a id="setting-color-link" class="btn-link" href="javascript:;"><i class="fa fa-play"></i> INICIAR PROCESSO</a></li>
+			      </ul>
+
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="javascript:;" id="form-search"><i class="fa fa-search setting-color"></i></a></li>
+			        <li><a href="#"><i class="fa fa-wheelchair setting-color"></i></a></li>
+			        <li><a href="#"><img id="container-photo" src="img/foto.png" /> <i class="fa fa-caret-down setting-color"></i></a></li>			        
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div>
+			
+
+				
+			  <div class="container-fluid" id="container-color-menu">				    
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			      <ul class="nav navbar-nav">
+			        <li><a href="#"><i class="fa fa-users setting-color-general"></i> Tarefas</a></li>
+			        <li><a href="#">Check if extra insurance is necessary</a></li>			        
+			      </ul>		      
+			  </div><!-- /.container-fluid -->
+				
+			</nav>
+		</header>
+	</section>
+
+	<section id="background-color-wrap" class="content-tarefa">
+		<div class="container">			
+			<div class="col-lg-12">
+				<label id=""></label>
+			</div>
+		</div>
+	</section>
+
+	<section id="background-color-wrap" class="content-check">
+		<div class="container">
+
+			<div class="col-lg-12">
+				<section class="panel">
+					<header class="panel-heading">
+						Dados do Pedido
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed">
+								<tr class="active">
+									<th>Número de pedido</th>
+									<th>Material</th>
+									<th>Marca</th>
+									<th>Data de Compra</th>
+									<th>Quantidade do Material</th>
+									<th>Preço Total</th>								
+								</tr>
+								<tbody id="pedidos">
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<div class="col-lg-12">
+				<section class="panel">
+					<header class="panel-heading">
+						Dados do Insumo
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed">
+								<tr class="active">
+									<th>Marca</th>
+									<th>Descrição</th>
+									<th>Quantidade</th>
+									<th>Preço</th>
+								</tr>
+
+								<tbody id="insumos">
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-lg-12">
+				<section class="panel">
+					<header class="panel-heading">
+						Dados do Solicitante
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed">								
+								<tr class="active">
+									<th>Nome Completo</th>
+									<th>Telefone</th>
+									<th>CPF</th>
+									<th>Cep</th>
+									<th>Endereço</th>
+									<th>Complemento</th>
+									<th>Cidade</th>
+									<th>Estado</th>
+								</tr>
+								<tbody id="conteudo">
+									
+								</tbody>
+								
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-lg-12">
+				<section class="panel">
+					<header class="panel-heading">
+						Dados da Entrega
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed">
+								<tr class="active">
+									<th>CEP</th>
+									<th>Endereço</th>
+									<th>Complemento</th>
+									<th>Cidade</th>
+									<th>Estado</th>
+								</tr>
+								<tbody id="entrega">
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>		
+			
+		</div>
+	</section>
+
+	<section>
+		<div class="footer">
+			<p>&copy; 2016 iColabora <span class="pull-right"><a href="#"><i class="fa fa-question-circle" id="icon-size"></i></a></span></p>
+		</div>
+	</section>	
+	<script src="js/bootstrap.min.js"></script>	
+</body>
+</html>
